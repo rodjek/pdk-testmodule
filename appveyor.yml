@@ -23,10 +23,6 @@ environment:
       CHECK: metadata-lint
 matrix:
   fast_finish: true
-  exclude:
-    environment:
-      RUBY_VERSION: 21-x64
-    CHECK: rubocop
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
   - bundle install --jobs 4 --retry 2 --without system_tests
