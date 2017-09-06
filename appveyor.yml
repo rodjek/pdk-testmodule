@@ -35,6 +35,7 @@ install:
       if($env:RUBY_VERSION -eq "24-x64") {
         gem install openssl "~> 2.0.4" --no-rdoc --no-ri -- --with-openssl-dir=C:\msys64\mingw64
       }
+      $host.SetShouldExit(0)
   - bundle install --jobs 4 --retry 2 --without system_tests
   - type Gemfile.lock
 build: off
