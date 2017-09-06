@@ -30,7 +30,10 @@ matrix:
   fast_finish: true
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
-  - gem install openssl --version "~> 2.0.4" --no-ri --no-rdoc -- --with-openssl-dir=C:\msys64\mingw64
+  - ps: |
+    if($env:RUBY_VERSION -eq "24-x64") {
+      gem install openssl "~> 2.0.4" --no-rdoc --no-ri -- --with-openssl-dir=C:\msys64\mingw64
+    }
   - bundle install --jobs 4 --retry 2 --without system_tests
   - type Gemfile.lock
 build: off
