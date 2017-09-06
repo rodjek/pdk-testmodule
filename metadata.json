@@ -1,7 +1,7 @@
 {
-  "name": "foo-testmodule",
+  "name": "tsharpe-foo",
   "version": "0.1.0",
-  "author": "William Hopper",
+  "author": "tsharpe",
   "summary": "",
   "license": "Apache-2.0",
   "source": "",
@@ -43,7 +43,7 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
-  "pdk-version": "1.1.0.pre (heads/master-0-gbafb86f)",
-  "template-url": "file:///home/tsharpe/code/puppet/pdk-module-template",
-  "template-ref": "heads/travis_jobs-0-g240fe1e"
+  "pdk-version": "1.1.0.pre (heads/pdk-420-0-gfa60333)",
+  "template-url": "file:///home/tsharpe/code/puppet/pdk-module-template/",
+  "template-ref": "heads/pdk-447-0-g41d0b44"
 }
